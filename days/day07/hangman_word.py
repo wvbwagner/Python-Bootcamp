@@ -1,0 +1,1 @@
+vocabulario = ['CAMELO', 'DROMEDARIO', 'ELEFANTE']
