@@ -5,10 +5,11 @@ import hangman_word, hangman_drawings
 
 chances = 6
 escolha = choice(hangman_word.vocabulario)
+tamanho = len(escolha)
 palavra = []
 tentadas = []
 
-for _ in range(len(escolha)):
+for _ in range(tamanho): # embora esteja fora do while, evita que o código tenha que calcular novamente o tamanho de "escolha"
 	palavra.append('_')
 
 while True:
@@ -37,7 +38,7 @@ while True:
 		continue
 
 	print("\n\033[1;32mBoa, tem a letra!\033[m\n")
-	for i in range(len(palavra)):
+	for i in range(tamanho):
 		if escolha[i] == palpite:
 			palavra[i] = palpite
 	
