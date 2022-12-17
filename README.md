@@ -5,9 +5,9 @@
 - [X] Day 02 - Understanding Data Types and How to Manipulate Strings 
 - [X] Day 03 - Control Flow and Logical Operators
 - [X] Day 04 - Randomisation and Python Lists
-- [ ] Day 05 - Python Loops
-- [ ] Day 06 - Python Functions & Karel
-- [ ] Day 07 - Hangman
+- [X] Day 05 - Python Loops
+- [X] Day 06 - Python Functions & Karel
+- [X] Day 07 - Hangman
 - [ ] Day 08 - Function Parameters & Caesar Cipher
 - [ ] Day 09 - Dictionaries, Nesting and the Secret Auction
 - [ ] Day 10 - Functions with Outputs
