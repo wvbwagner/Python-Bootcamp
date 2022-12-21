@@ -1,6 +1,7 @@
 def prime_checker(number):
     divisor = 0
-    for i in range(1, number + 1):
+    loopEnd = number + 1
+    for i in range(1, loopEnd):
         if number % i == 0:
             divisor += 1
     if divisor == 2:
