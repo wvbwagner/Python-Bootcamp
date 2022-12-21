@@ -8,7 +8,7 @@
 - [X] Day 05 - Python Loops
 - [X] Day 06 - Python Functions & Karel
 - [X] Day 07 - Hangman
-- [ ] Day 08 - Function Parameters & Caesar Cipher
+- [X] Day 08 - Function Parameters & Caesar Cipher
 - [ ] Day 09 - Dictionaries, Nesting and the Secret Auction
 - [ ] Day 10 - Functions with Outputs
 - [ ] Day 11 - The Blackjack Capstone Project
