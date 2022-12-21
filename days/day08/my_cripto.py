@@ -2,29 +2,22 @@ import string
 
 alpha = string.ascii_lowercase # the alphabet in lowercase
 size = len(alpha)
-def codeAlpha(shift):
-    coding = ''
-    startPoint = shift - size
-    for i in range(startPoint, shift):
-        coding += alpha[i]
-    return str(coding)
 
-def encryptMessage(text, shifts):
-    localAlphabet = codeAlpha(shifts)
-    encrypted = ''
-    for letter in text:
+def criptografar(texto, passo):
+    cipher = ''
+    passoReal = size - passo
+    for letter in texto:
         if letter not in alpha:
-            encrypted += letter
+            cipher += letter
         else:
-            encrypted += localAlphabet[alpha.index(letter)]
-    return encrypted
-
-def decriptMessage(cipher, key):
-    localAlphabet = codeAlpha(key)
-    decripted = ''
-    for letter in cipher:
+            cipher += (alpha[alpha.index(letter) - passoReal])
+    return str(cipher)
+    
+def decodificar(texto, passo):
+    clear = ''
+    for letter in texto:
         if letter not in alpha:
-            decripted += letter
+            clear += letter
         else:
-            decripted += alpha[localAlphabet.index(letter)]
-    return decripted
+            clear += (alpha[alpha.index(letter) - passo])
+    return str(clear)
