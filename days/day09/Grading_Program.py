@@ -7,7 +7,7 @@ student_scores = {
 }
 student_grades = {}
 
-'''def checkGrades(value):
+def checkGrades(value):
     if value <= 70:
         grade = 'Fail'
     elif value <= 80:
@@ -19,8 +19,6 @@ student_grades = {}
     return grade
 
 for names, grades in student_scores.items():
-    student_grades[names] = checkGrades(grades)'''
-for grades in student_scores.values():
-    x = student_scores[grades]
-    print(x)
+    student_grades[names] = checkGrades(grades)
+
 print(student_grades)
