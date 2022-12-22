@@ -22,17 +22,15 @@ def criptografar(texto, passo):
     cipher = ''
     passoReal = size - passo
     for letter in texto:
-        if letter not in alpha:
-            cipher += letter
-        else:
-            cipher += (alpha[alpha.index(letter) - passoReal])
+        position = alpha.index(letter)
+        newPosition = position - passoReal
+        cipher += alpha[newPosition]
     return str(cipher)
     
 def decodificar(texto, passo):
     clear = ''
     for letter in texto:
-        if letter not in alpha:
-            clear += letter
-        else:
-            clear += (alpha[alpha.index(letter) - passo])
+        position = alpha.index(letter)
+        newPosition = position - passo
+        clear += alpha[newPosition]
     return str(clear)
