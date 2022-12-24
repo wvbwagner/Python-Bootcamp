@@ -25,4 +25,4 @@ def checkWinner(rank):
             winner.clear()
             winner.append(i.get('Name'))
             winner.append(i.get('Bid'))
-    return winner
+    return 'Winner is ' + winner[0] + ' with a bid of $' + winner[1]
