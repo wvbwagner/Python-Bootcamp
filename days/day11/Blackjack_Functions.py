@@ -11,15 +11,18 @@ J, Q, K: valem 10
 cards = [2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11]
 
 def dealCards():
+    # returns a random card from the deck
     return choice(cards)
 
 def myCards():
+    # gives two cards to the player
     myCards = []
     for i in range(2):
         myCards.append(dealCards())
     return myCards
 
 def cpuCards():
+    # gives cards to the computer until it has a minimum score of 17
     global cpuPoints
     cpuCards = []
     cpuPoints = sum(cpuCards)
