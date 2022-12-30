@@ -31,10 +31,6 @@ def cpuCards():
         cpuPoints = sum(cpuCards)
     return cpuCards
 
-'''myHand = myCards()
-myPoints = sum(myHand)
-cpuHand = cpuCards()'''
-
 def startGame():
     global myPoints, myHand, cpuHand
     myHand = myCards()
@@ -73,8 +69,6 @@ def wannaPlay():
         question = input('Do you want to play BlackJack Capstone: [y] [n] ')
         if question == 'y':
             clear()
-            #myHand.clear()
-            #cpuHand.clear()
             startGame()
         elif question == 'n':
             print('Good bye!')
