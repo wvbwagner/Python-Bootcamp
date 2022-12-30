@@ -31,12 +31,15 @@ def cpuCards():
         cpuPoints = sum(cpuCards)
     return cpuCards
 
-myHand = myCards()
+'''myHand = myCards()
 myPoints = sum(myHand)
-cpuHand = cpuCards()
+cpuHand = cpuCards()'''
 
 def startGame():
-    global myPoints
+    global myPoints, myHand, cpuHand
+    myHand = myCards()
+    myPoints = sum(myHand)
+    cpuHand = cpuCards()
     while True:
         print(f'Your cards are {myHand}. Your score is {myPoints}')
         print(f'Computer\'s first card is {cpuHand[0]}')
@@ -55,10 +58,10 @@ def checkResults():
     print(f'Computer\'s final hand is {cpuHand}, final score: {cpuPoints}')
     if myPoints > 21:
         print('You went over. You lose!')
-    elif cpuPoints > myPoints:
-        print('You lose!')
     elif cpuPoints > 21 and myPoints < 21:
         print('CPU went over. You win!')
+    elif cpuPoints > myPoints:
+        print('You lose!')
     elif cpuPoints < myPoints:
         print('You win!')
     elif cpuPoints == myPoints:
@@ -70,6 +73,8 @@ def wannaPlay():
         question = input('Do you want to play BlackJack Capstone: [y] [n] ')
         if question == 'y':
             clear()
+            #myHand.clear()
+            #cpuHand.clear()
             startGame()
         elif question == 'n':
             print('Good bye!')
