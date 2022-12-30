@@ -43,7 +43,7 @@ def startGame():
         if question == 'y':
             myHand.append(dealCards())
             myPoints += myHand[-1]
-            if myPoints > 21:
+            if myPoints > 21 or cpuPoints == 21:
                 break
         else:
             break
@@ -54,12 +54,14 @@ def checkResults():
     print(f'Computer\'s final hand is {cpuHand}, final score: {cpuPoints}')
     if myPoints > 21:
         print('You went over. You lose!')
-    elif cpuPoints > 21 and myPoints < 21:
+    elif cpuPoints > 21 and myPoints <= 21:
         print('CPU went over. You win!')
     elif cpuPoints > myPoints:
         print('You lose!')
     elif cpuPoints < myPoints:
         print('You win!')
+    elif cpuPoints == 21:
+        print('Computer\'s blackjack! You lose!')
     elif cpuPoints == myPoints:
         print('It\'s a draw')
 
