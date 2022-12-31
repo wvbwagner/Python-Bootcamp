@@ -5,11 +5,9 @@ def secretRandomNumber():
 
 def chooseLevel():
     difficulty = input("Choose a difficulty. Type 'easy' or 'hard': ").strip().lower()
-    if difficulty == 'easy':
-        guesses = 10
-    elif difficulty == 'hard':
-        guesses = 5
-    return guesses
+    if difficulty == 'hard':
+        return 5
+    return 10
 
 def checkWin(guess):
     global guesses
