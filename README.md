@@ -9,11 +9,11 @@
 - [X] Day 06 - Python Functions & Karel
 - [X] Day 07 - Hangman
 - [X] Day 08 - Function Parameters & Caesar Cipher
-- [ ] Day 09 - Dictionaries, Nesting and the Secret Auction
-- [ ] Day 10 - Functions with Outputs
-- [ ] Day 11 - The Blackjack Capstone Project
-- [ ] Day 12 - Scope & Number Guessing Game
-- [ ] Day 13 - Debugging: How to Find and Fix Errors in your Code
+- [X] Day 09 - Dictionaries, Nesting and the Secret Auction
+- [X] Day 10 - Functions with Outputs
+- [X] Day 11 - The Blackjack Capstone Project
+- [X] Day 12 - Scope & Number Guessing Game
+- [X] Day 13 - Debugging: How to Find and Fix Errors in your Code
 - [ ] Day 14 - Higher Lower Game Project
 
 
