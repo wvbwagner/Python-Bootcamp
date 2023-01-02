@@ -3,14 +3,12 @@ from random import choice
 from logo import vs, logo
 from replit import clear
 
-#score = 0
 def game():
-    #global score
     score = 0
     firstPlayer = choice(data)
     secondPlayer = choice(data)
     if secondPlayer == firstPlayer:
-        secondPlayer = choice
+        secondPlayer = choice(data)
     print(logo)
     while True:
         print(f'Compare A: {firstPlayer.get("name")}, a {firstPlayer.get("description")} from {firstPlayer.get("country")}')
@@ -33,5 +31,6 @@ def game():
             print(f'Sorry, that\'s wrong! Final score: {score}.')
             exit(1)
         firstPlayer = secondPlayer
+        secondPlayer = choice(data)
         if secondPlayer == firstPlayer:
             secondPlayer = choice(data)
