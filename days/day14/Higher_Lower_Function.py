@@ -35,9 +35,7 @@ def presentPlayers(score):
 
 def comparePlayers(valuesToCompare):
     global score
-    playerOne = valuesToCompare[0]
-    playerTwo = valuesToCompare[1]
-    maximum = valuesToCompare[2]
+    playerOne, playerTwo, maximum = valuesToCompare
     question = input('Who has more followers? Type "A" or "B": ').strip().upper()
     if question == 'A' and maximum == playerOne or question == 'B' and maximum == playerTwo:
         clear()
