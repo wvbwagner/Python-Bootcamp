@@ -1,4 +1,3 @@
-from logo import logo
-from Higher_Lower_Function import game
+from Higher_Lower_Function import play
 
-game()
+play()
