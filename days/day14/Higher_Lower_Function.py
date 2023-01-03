@@ -21,10 +21,8 @@ def initialPlay(score):
     return player1, player2
 
 def presentPlayers(score):
-    
     firstPlayer, secondPlayer = initialPlay(score)
-    #secondPlayer = players[1]
-    print(logo)
+    #print(logo)
     print(f'Compare A: {firstPlayer.get("name")}, a {firstPlayer.get("description")} from {firstPlayer.get("country")}')
     print(vs)
     print(f'Compare B: {secondPlayer.get("name")}, a {secondPlayer.get("description")} from {secondPlayer.get("country")}')
@@ -53,5 +51,6 @@ def comparePlayers(valuesToCompare):
         exit(1)
 
 def play():
+    print(logo)
     while True:
-        comparePlayers(presentPlayers(score))
+        comparePlayers(presentPlayers(initialPlay(score)))
