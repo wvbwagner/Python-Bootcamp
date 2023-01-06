@@ -59,7 +59,7 @@ def checkMoney(order):
     nickles = int(input('How many nickles? ')) * NICKEL
     pennies = int(input('How many pennies? ')) * PENNY
     sum = quarter + dimes + nickles + pennies
-    if sum > price:
+    if sum >= price:
         print(f'Here is {locale.currency(sum - price)} in change.\nEnjoy your {order}!')
         setReport(order)
         return price
@@ -85,5 +85,3 @@ def cafe():
         
 
 cafe()
-
-
