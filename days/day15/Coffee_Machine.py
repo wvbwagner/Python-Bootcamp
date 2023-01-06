@@ -1,4 +1,6 @@
 import locale
+from time import sleep
+
 locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 
 itens = {
@@ -24,10 +26,9 @@ def getReport(money):
 
 def setReport(order):
     '''Decreases the amount of ingredients available and sets the new values'''
-    if order in itens:
-        ingredients['water'] -= itens[order].get('water')
-        ingredients['milk'] -= itens[order].get('milk')
-        ingredients['coffee'] -= itens[order].get('coffee')
+    ingredients['water'] -= itens[order].get('water')
+    ingredients['milk'] -= itens[order].get('milk')
+    ingredients['coffee'] -= itens[order].get('coffee')
     return ingredients
 
 def checkResources(order):
@@ -35,9 +36,9 @@ def checkResources(order):
     water = ingredients.get('water')
     milk = ingredients.get('milk')
     coffee = ingredients.get('coffee')
-    if water >= itens[order].get('water') and milk >= itens[order].get('milk') and coffee >= itens[order].get('coffee'):
-        print('Please insert coins.')
-        return True
+    if water >= itens[order].get('water') and milk >= itens[order].get('milk'):
+        if coffee >= itens[order].get('coffee'):
+            return True
     elif water < itens[order].get('water'):
         print('Not enough water')
     elif milk < itens[order].get('milk'):
@@ -51,6 +52,7 @@ def checkMoney(order):
     '''Receives the amount of money and checks if it is enough to pay for the item; returns the value
     of the item so it can be added to the profit. Also calls for setReport() to set the new amount of
     ingredients'''
+    print('Please insert coins.')
     price = itens[order].get('price')
     quarter = int(input('How many quarters? ')) * QUARTER
     dimes = int(input('How many dimes? ')) * DIME
@@ -72,6 +74,10 @@ def cafe():
         ask = input('What would you like? (espresso/latte/cappuccino) ')
         if ask == 'report':
             getReport(profit)
+        elif ask == 'off':
+            print('Shutting down...')
+            sleep(1)
+            exit(1)
         elif ask not in itens:
             print('Invalid choice')
         elif checkResources(ask):
