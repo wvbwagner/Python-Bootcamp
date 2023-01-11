@@ -18,15 +18,16 @@ class QuizBrain:
             self.q_number += 1
             answer = input(f'Q.{self.q_number}: {q_now.text} (True, False) ').strip().capitalize()
             self.check_answer(answer, q_now.answer)
+        print(f'You\'ve completed the quiz.\nYourfinal socre is {self.points}/{self.q_number}')
 
     def check_answer(self, user_answer, correct_answer):
         if user_answer == correct_answer.capitalize():
+            print('You got it right!')
             self.points += 1
-            print(f'You got it right!\nYour score is {self.points}/{self.q_number}')
         else:
             print(f'You\'re wrong! Game over!')
-            print(f'The correct answer is {correct_answer}')
-            print(f'Your score is {self.points}/{self.q_number}')
-            exit(1)
+        print(f'The correct answer is {correct_answer}')
+        print(f'Your score is {self.points}/{self.q_number}\n')
+            
 
 
