@@ -14,14 +14,14 @@
 - [X] Day 11 - The Blackjack Capstone Project
 - [X] Day 12 - Scope & Number Guessing Game
 - [X] Day 13 - Debugging: How to Find and Fix Errors in your Code
-- [ ] Day 14 - Higher Lower Game Project
+- [X] Day 14 - Higher Lower Game Project
 
 
 ## Intermediate
-- [ ] Day 15 - Local Development Environment Setup & the Coffee Machine
-- [ ] Day 16 - Object Oriented Programming (OOP)
-- [ ] Day 17 - The Quiz Project & the Benefits of OOP
-- [ ] Day 18 - Turtle & the Graphical User Interface (GUI)
+- [X] Day 15 - Local Development Environment Setup & the Coffee Machine
+- [X] Day 16 - Object Oriented Programming (OOP)
+- [X] Day 17 - The Quiz Project & the Benefits of OOP
+- [X] Day 18 - Turtle & the Graphical User Interface (GUI)
 - [ ] Day 19 - Instances, State and Higher Order Functions
 - [ ] Day 20 - Build the Snake Game Part 1: Animation & Coordinates
 - [ ] Day 21 - Build the Snake Game Part 2: Inheritance & List Slicing
