@@ -11,7 +11,7 @@ class Snake:
         self.segments = []
         self.position = 0
         self.create_snake()
-        #self.food()
+        
 
     def create_snake(self):
         
@@ -22,13 +22,6 @@ class Snake:
             tito.color('white')
             self.segments.append(tito)
             self.position -=20
-
-    '''def food(self):  
-        tito = Turtle()
-        tito.penup()
-        tito.shape('circle')
-        tito.color('white')
-        tito.setposition(randint(-300, 300), randint(-300, 300))'''
 
     def move_snake(self):
         
