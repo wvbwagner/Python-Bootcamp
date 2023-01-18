@@ -45,14 +45,12 @@ class Snake:
         return False
 
     def hit_tail(self):
-        for segments in self.segments:
-            if segments == self.head:
-                pass
-            elif self.head.distance(segments) <= 10:
+        for segments in self.segments[1:]:
+            if self.head.distance(segments) <= 10:
                 return True
         return False
-        
-            
+
+
     def up(self):
         if self.head.heading() != 270.0:
             self.head.setheading(90)
