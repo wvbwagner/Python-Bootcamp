@@ -2,12 +2,12 @@ import pandas
 from turtle import Turtle, Screen
 from scoreboard import Scoreboard
 
-us_states = pandas.read_csv("us-states-game-start/50_states.csv")
+us_states = pandas.read_csv("50_states.csv")
 
 screen = Screen()
 screen.setup(width=750, height=550)
 screen.title("U.S. States Game")
-gif = "us-states-game-start/blank_states_img.gif"
+gif = "blank_states_img.gif"
 screen.addshape(gif)
 
 turtle = Turtle()
@@ -35,14 +35,15 @@ while len(already_answered) < len(states):
     elif in_list == 'Exit':
         break
 
-missing = []
+'''missing = []
 for state in states:
     if state not in already_answered:
-        missing.append(state)
+        missing.append(state)'''
+missing = [state for state in states if state not in already_answered]
 
 not_listed = {'Missing': missing}
 dict = pandas.DataFrame(not_listed)
-dict.to_csv('us-states-game-start/Missing_States.csv')
+dict.to_csv('Missing_States.csv')
 
 screen.exitonclick()
 
