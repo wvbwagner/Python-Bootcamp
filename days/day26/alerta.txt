@@ -1,0 +1,1 @@
+Já foi trocado, no dia 25, a lista 'missing' usando List Comprehension
