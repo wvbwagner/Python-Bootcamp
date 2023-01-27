@@ -22,15 +22,15 @@
 - [X] Day 16 - Object Oriented Programming (OOP)
 - [X] Day 17 - The Quiz Project & the Benefits of OOP
 - [X] Day 18 - Turtle & the Graphical User Interface (GUI)
-- [ ] Day 19 - Instances, State and Higher Order Functions
-- [ ] Day 20 - Build the Snake Game Part 1: Animation & Coordinates
-- [ ] Day 21 - Build the Snake Game Part 2: Inheritance & List Slicing
-- [ ] Day 22 - Build Pong: The Famous Arcade Game
-- [ ] Day 23 - The Turtle Crossing Capstone Project
-- [ ] Day 24 - Files, Directories and Paths
-- [ ] Day 25 - Working with CSV Data and the Pandas Library
-- [ ] Day 26 - List Comprehension and the NATO Alphabet
-- [ ] Day 27 - Tkinter, *args, **kwargs and Creating GUI Programs
+- [X] Day 19 - Instances, State and Higher Order Functions
+- [X] Day 20 - Build the Snake Game Part 1: Animation & Coordinates
+- [X] Day 21 - Build the Snake Game Part 2: Inheritance & List Slicing
+- [X] Day 22 - Build Pong: The Famous Arcade Game
+- [X] Day 23 - The Turtle Crossing Capstone Project
+- [X] Day 24 - Files, Directories and Paths
+- [X] Day 25 - Working with CSV Data and the Pandas Library
+- [X] Day 26 - List Comprehension and the NATO Alphabet
+- [X] Day 27 - Tkinter, *args, **kwargs and Creating GUI Programs
 - [ ] Day 28 - Tkinter, Dynamic Typing and the Pomodoro GUI Application 
 - [ ] Day 29 - Building a Password Manager GUI App with Tkinter
 - [ ] Day 30 - Errors, Exceptions and JSON Data: Improving the Password
