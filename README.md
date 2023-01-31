@@ -31,8 +31,8 @@
 - [X] Day 25 - Working with CSV Data and the Pandas Library
 - [X] Day 26 - List Comprehension and the NATO Alphabet
 - [X] Day 27 - Tkinter, *args, **kwargs and Creating GUI Programs
-- [ ] Day 28 - Tkinter, Dynamic Typing and the Pomodoro GUI Application 
-- [ ] Day 29 - Building a Password Manager GUI App with Tkinter
+- [X] Day 28 - Tkinter, Dynamic Typing and the Pomodoro GUI Application 
+- [X] Day 29 - Building a Password Manager GUI App with Tkinter
 - [ ] Day 30 - Errors, Exceptions and JSON Data: Improving the Password
 - [ ] Day 31 - Flash Card App Capstone Project
 - [ ] Day 32 - Send Email (smtplib) & Manage Dates (datetime)
